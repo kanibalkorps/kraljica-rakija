@@ -1,0 +1,66 @@
+//shopping cart code
+
+
+<!-- <div class="col-12 col-lg-7 px-lg-0">
+                <div class="row"><h3 class="text-center text-warning h3">Niste izabrali nijedan proizvod!</h3></div>
+                <div class="mb-card row my-2">
+                    <div class="col-12 col-md-3">
+                        <img src="assets/img/momirovic-destilerija-rakija-od-sljive.jpg" class="img-fluid rounded-3" width="150px" alt="Rakija bottle"/>
+                    </div>
+                    <div class="col-12 col-md-6 mx-0 px-0">
+                        <div class="mb-card-text">
+                            <h3>Šljiva</h3>
+                            <p> Sa ponosom predstavljamo rakiju od šljive, kajsije, dunje i kruške, a za prave sladokusce tu je i liker sa medom. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="mb-shop-price d-block">
+                            <p class="text-center p-2 m-0">1899.00 RSD</p>
+                        </div>
+                        <div class="mb-card-icons d-flex justify-content-end align-items-center">
+                            <form action="order-items-number.php" name="order-items-number">
+                                <input type="number" class="form-control p-1" placeholder="1"/>
+                            </form>
+                            <i class="fa-solid fa-trash px-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-card row my-2">
+                    <div class="col-12 col-md-3">
+                        <img src="assets/img/rakija-kajsija-zora.jpg" class="img-fluid rounded-3" width="150px" alt="Rakija bottle"/>
+                    </div>
+                    <div class="col-12 col-md-6 mx-0 px-0">
+                        <div class="mb-card-text">
+                            <h3>Kajsija</h3>
+                            <p> Sa ponosom predstavljamo rakiju od šljive, kajsije, dunje i kruške, a za prave sladokusce tu je i liker sa medom. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-end align-items-center">
+                        <div class="mb-card-icons d-flex justify-content-end align-items-center">
+                            <form action="order-items-number.php" name="order-items-number">
+                                <input type="number" class="form-control p-1" placeholder="1"/>
+                            </form>
+                            <i class="fa-solid fa-trash px-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-card row my-2">
+                    <div class="col-12 col-md-3">
+                        <img src="assets/img/rakoja-momirovic-karmen-kruska.jpg" class="img-fluid rounded-3" width="150px" alt="Rakija bottle"/>
+                    </div>
+                    <div class="col-12 col-md-6 mx-0 px-0">
+                        <div class="mb-card-text">
+                            <h3>Kruška</h3>
+                            <p> Sa ponosom predstavljamo rakiju od šljive, kajsije, dunje i kruške, a za prave sladokusce tu je i liker sa medom. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-end align-items-center">
+                        <div class="mb-card-icons d-flex justify-content-end align-items-center">
+                            <form action="order-items-number.php" name="order-items-number">
+                                <input type="number" class="form-control p-1" placeholder="1"/>
+                            </form>
+                            <i class="fa-solid fa-trash px-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->

@@ -1,0 +1,239 @@
+// REMOVE CSS IMPORTS FOR PRODUCTION BY COMBINING THEM IN 1 .MIN.CSS FILE
+@import url("responsive.css");
+
+
+$main-blue: #0c1c34;
+$main-gold: #f8c90c;
+$main-gray: #54595F;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: $main-gray;
+    scroll-behavior: smooth;
+    a {
+        color: $main-blue;
+        transition: color 0.1s ease-in;
+        &:hover {
+            color: $main-gold;
+        }
+    }
+}
+.navbar {
+    background-color: $main-blue;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    padding: 0px !important;
+    .container-fluid {
+        padding: 0px 80px ;
+        .mb-logo-and-hamburger {
+            padding: 5px 0;
+            .navbar-brand {
+                width: 80px;
+                .mb-logo-img {
+                    width: 80px;
+                }
+            }
+            .mb-hamburger-btn {
+                display: none;
+            }
+        }
+        #mb-nav-container {
+            display: block;
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: #fff;
+                        transition: color 0.2s ease-in;
+                        font-size: 18px;
+                        &:hover {
+                            color: $main-gold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+.mb-header-bg-img {
+    background-image: url('../img/drvece-pozadina-tamna2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 700px;
+    .mb-header-content {
+        width: 80%;
+    }
+}
+.mb-header-carousel-img {
+    width: 500px !important;
+    margin: 0px auto;
+}
+.mb-about-text {
+    font-size: 20px;
+    text-align: justify;
+}
+.mb-text-color-gold {
+    color: $main-gold;
+}
+#mb-form-shopping {
+    table {
+        margin: 0 auto !important;
+        tbody tr td{ 
+            padding: 0px 20px;
+            .mb-shopping-required {
+                color: rgb(255, 0, 0);
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.mb-card {
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 20px 0px !important;
+}
+.mb-card-icons {
+    form {
+        input[type='number'] {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+.mb-shop-price {
+    p {
+        font-weight: bold;
+    }
+}
+.mb-border-bottom {
+    border-bottom: 1px #e2e2e2 solid;
+}
+.mb-bg-purple {
+    background-color: $main-blue !important;
+    border: none;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: $main-gold;
+    }
+}
+.mb-info-bg {
+    height: auto;
+    background-image: url("../img/header-bg-img-dark2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .mb-info {
+        width: 90%;
+    }
+    .mb-info-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            font-size: 50px;
+            color: #fff;
+        }
+    }
+    .mb-info-text {
+        p {
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+.mb-products-img {
+    position: relative;
+    img {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .mb-discount {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 70px;
+        background-color: $main-gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -2px 2px 5px -1px;
+        span {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 2px;
+        }
+    }
+}
+.mb-about-buttons {
+    .mb-price {
+        color: $main-blue;
+        font-weight: bold;
+        padding: 5px 10px;
+
+    }
+}
+.mb-contact-modal-btn {
+    background-color: #fff;
+    text-decoration: underline;
+    border: none;
+    transition: color 0.1s ease-in;
+    &:hover {
+        color: $main-gold;
+    }
+}
+.mb-span-danger {
+    max-width: 220px;
+}
+.mb-span-danger-large {
+    max-width: 466px;
+}
+.modal-body {
+    p {
+        text-align: justify;
+    }
+}
+.mb-footer {
+    background: linear-gradient(#0c1c34, #01040a);
+}
+.footer-header {
+    h4 {
+        color: #fff;
+    }
+}
+.footer-text {
+    p {
+        color: #fff;
+    }
+}
+.footer-links {
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                padding: 10px 10px !important;
+                margin: 0px auto;
+                display: block;
+                transform: background 0.2s ease-in;
+                &:hover {
+                    background-color: #0e203a;
+                }
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.accordion-button:not(.collapsed) {
+    color: $main-gray;
+    background-color: #fff;
+}

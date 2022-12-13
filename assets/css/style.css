@@ -1,0 +1,228 @@
+@import url("responsive.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #54595F;
+  scroll-behavior: smooth;
+}
+* a {
+  color: #0c1c34;
+  transition: color 0.1s ease-in;
+}
+* a:hover {
+  color: #f8c90c;
+}
+
+.navbar {
+  background-color: #0c1c34;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  padding: 0px !important;
+}
+.navbar .container-fluid {
+  padding: 0px 80px;
+}
+.navbar .container-fluid .mb-logo-and-hamburger {
+  padding: 5px 0;
+}
+.navbar .container-fluid .mb-logo-and-hamburger .navbar-brand {
+  width: 80px;
+}
+.navbar .container-fluid .mb-logo-and-hamburger .navbar-brand .mb-logo-img {
+  width: 80px;
+}
+.navbar .container-fluid .mb-logo-and-hamburger .mb-hamburger-btn {
+  display: none;
+}
+.navbar .container-fluid #mb-nav-container {
+  display: block;
+}
+.navbar .container-fluid #mb-nav-container .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  transition: color 0.2s ease-in;
+  font-size: 18px;
+}
+.navbar .container-fluid #mb-nav-container .navbar-nav .nav-item .nav-link:hover {
+  color: #f8c90c;
+}
+
+.mb-header-bg-img {
+  background-image: url("../img/drvece-pozadina-tamna2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 700px;
+}
+.mb-header-bg-img .mb-header-content {
+  width: 80%;
+}
+
+.mb-header-carousel-img {
+  width: 500px !important;
+  margin: 0px auto;
+}
+
+.mb-about-text {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.mb-text-color-gold {
+  color: #f8c90c;
+}
+
+#mb-form-shopping table {
+  margin: 0 auto !important;
+}
+#mb-form-shopping table tbody tr td {
+  padding: 0px 20px;
+}
+#mb-form-shopping table tbody tr td .mb-shopping-required {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mb-card {
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  padding: 20px 0px !important;
+}
+
+.mb-card-icons form input[type=number] {
+  width: 50px;
+  height: 50px;
+}
+
+.mb-shop-price p {
+  font-weight: bold;
+}
+
+.mb-border-bottom {
+  border-bottom: 1px #e2e2e2 solid;
+}
+
+.mb-bg-purple {
+  background-color: #0c1c34 !important;
+  border: none;
+  transition: color 0.2s ease-in;
+}
+.mb-bg-purple:hover {
+  color: #f8c90c;
+}
+
+.mb-info-bg {
+  height: auto;
+  background-image: url("../img/header-bg-img-dark2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.mb-info-bg .mb-info {
+  width: 90%;
+}
+.mb-info-bg .mb-info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-info-bg .mb-info-icon i {
+  font-size: 50px;
+  color: #fff;
+}
+.mb-info-bg .mb-info-text p {
+  color: #fff;
+  text-align: center;
+}
+
+.mb-products-img {
+  position: relative;
+}
+.mb-products-img img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mb-products-img .mb-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70px;
+  background-color: #f8c90c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 2px 5px -1px;
+}
+.mb-products-img .mb-discount span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 2px;
+}
+
+.mb-about-buttons .mb-price {
+  color: #0c1c34;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.mb-contact-modal-btn {
+  background-color: #fff;
+  text-decoration: underline;
+  border: none;
+  transition: color 0.1s ease-in;
+}
+.mb-contact-modal-btn:hover {
+  color: #f8c90c;
+}
+
+.mb-span-danger {
+  max-width: 220px;
+}
+
+.mb-span-danger-large {
+  max-width: 466px;
+}
+
+.modal-body p {
+  text-align: justify;
+}
+
+.mb-footer {
+  background: linear-gradient(#0c1c34, #01040a);
+}
+
+.footer-header h4 {
+  color: #fff;
+}
+
+.footer-text p {
+  color: #fff;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+.footer-links ul li {
+  list-style-type: none;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  padding: 10px 10px !important;
+  margin: 0px auto;
+  display: block;
+  transform: background 0.2s ease-in;
+}
+.footer-links ul li a:hover {
+  background-color: #0e203a;
+}
+.footer-links ul li a i {
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #54595F;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
