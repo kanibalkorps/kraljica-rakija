@@ -64,3 +64,16 @@
                     </div>
                 </div>
             </div> -->
+
+
+
+
+//products discount and add to list button
+
+<!-- <div class="mb-discount">
+                        <span>-13%</span>
+     </div> -->
+<!-- <div class="w-md-50 w-sm-75 w-100 mb-about-buttons mb-border-bottom mb-1 ms-auto me-0 d-flex justify-content-lg-between justify-content-center align-items-center">
+                    <span class="me-2 mb-price h3">1.899,00 din</span>
+                    <button class="btn btn-primary mb-bg-purple me-2 mb-2">Dodaj na listu</button>
+                </div> -->

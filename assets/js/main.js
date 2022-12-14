@@ -9,14 +9,49 @@ var rePhone = /^(\+381)?(\s|-)?06(([0-6]|[8-9])\d{6,8}|(77|78)\d{7}){1}$/;
 
 window.onload = function(){
 
-    const BASE_IMG = "assets/img";
+    const BASE_IMG = "assets/img/";
 
     createNavBar();
 
 
-   
+   //dinamicki ispis proizvoda
+   let productsContainer = document.querySelector("#mb-products-container");
+
+   let productsTitles = new Array("Dunja", "Šljiva", "Kajsija", "LIKER SA MEDOM", "Kruška");
+   let productsImgSrc = new Array("momirovic-destilerija-ormar-rakija-od-dunje.jpg","momirovic-destilerija-rakija-od-sljive.jpg","rakija-kajsija-zora.jpg", "rakija-zudnja-momirovic-liker-sa-medom.jpg", "rakoja-momirovic-karmen-kruska.jpg");
+   let productsText = new Array("Naša rakija od dunja je izuzetnog kvaliteta i ukusa. Napravljena od domaće dunje, pažljivo izabranih plodova, ova rakija zaista ostavlja čoveka bez teksta! Ljudi koji su probali našu rakiju od dunja su bili oduševljeni njenim ukusom i kvalitetom.","Rakija od šljiva je izuzetno ukusna i kvalitetna. Naša rakija je napravljena od svežih, sočnih i ukusnih šljiva, koja se beru u savršenom trenutku zrenja. Nakon toga, šljive se fermentiraju i destiliraju da bi se dobila ova jaka i ukusna rakija. Naša rakija ima izuzetno bogat i složen ukus, sa jakim uticajem slatkog voća.","Sa ponosom predstavljamo našu rakiju od kajsije. Iza njenog imena stoje slatki plodovi i nasmejana lica, a iza nezaboravnog ukusa dugogodišnja tradicija i umeće. Ova rakija je naširoko poznata po njenom krajnje očaravajućem ukusu i mirisu i predstavlja pravi delikates za sve ljubitelje jakih pića!","Liker sa medom je za one ljude koji vole da osete sladak ukus dok piju svoje piće. Za takve ljude naš liker je definitivno najbolji izbor, a takođe i za one koji žele da osete ukus tradicije i kvalitet u jednom gutljaju!","Rakija od kruške je jedna od naših najboljih, koja takođe ne ostavlja nikoga ko je proba ravnodušnim. Jak ukus i miris sa aromom svežeg voća svako pamti ko proba bar jednom u životu, i zato preporučujemo da, ako želite za sebe samo najkvalitetnije, obavezno probate našu krušku!");
+
+   let productsPrint = '';
+   for (let i = 0; i < productsTitles.length; i++) {
+        let newRow = `<div class="row mx-auto my-3 px-0">
+                        <div class="col-lg-4 col-12 d-flex justify-content-center justify-content-lg-start align-items-center mb-products-img-div">
+                            <div class="mb-products-img">
+                                <img src="${BASE_IMG}${productsImgSrc[i]}" alt="Rakija bottle" class="img-fluid rounded-2" width="350px"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <div class="mb-about-header mb-2">
+                                <h2 class="h2 m-0 text-lg-start text-center mt-lg-auto mt-3 text-uppercase">${productsTitles[i]}</h2>
+                            </div>
+                            <div class="mb-about-text">
+                                <p class="text-muted">
+                                    ${productsText[i]}
+                                </p>
+                            </div>
+                        </div>
+                      </div>`;
+        productsPrint += newRow;
+   }
+   productsContainer.innerHTML = productsPrint;
 
 
+
+
+
+
+
+
+    //form objekti i validacija
     objName = document.querySelector("#user-name");
     objLastName = document.querySelector("#user-lastname");
     objAddress = document.querySelector("#user-address");
