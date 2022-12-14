@@ -1,7 +1,6 @@
 // REMOVE CSS IMPORTS FOR PRODUCTION BY COMBINING THEM IN 1 .MIN.CSS FILE
 @import url("responsive.css");
 
-
 $main-blue: #0c1c34;
 $main-gold: #f8c90c;
 $main-gray: #54595F;
@@ -10,6 +9,7 @@ $main-gray: #54595F;
     margin: 0px;
     padding: 0px;
     color: $main-gray;
+    font-family: 'Roboto Serif', serif;
     scroll-behavior: smooth;
     a {
         color: $main-blue;
@@ -59,6 +59,36 @@ $main-gray: #54595F;
     
     
 }
+.mb-back {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        i {
+            margin: 0px;
+            color: $main-blue;
+            animation: arrow-movement 1.5s ease-in-out infinite;
+        }
+    }
+    @keyframes arrow-movement {
+        0% { 
+            opacity: 0;
+            margin-right: 0px;
+        }
+        70% {
+            opacity: 1;
+            margin-right: 1px;
+
+        }
+        100% { 
+            opacity: 0;
+            margin-right: 80px;
+
+        }
+    }
+}
+
 .mb-header-bg-img {
     background-image: url('../img/drvece-pozadina-tamna2.png');
     background-repeat: no-repeat;

@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   color: #54595F;
+  font-family: "Roboto Serif", serif;
   scroll-behavior: smooth;
 }
 * a {
@@ -46,6 +47,47 @@
 }
 .navbar .container-fluid #mb-nav-container .navbar-nav .nav-item .nav-link:hover {
   color: #f8c90c;
+}
+
+.mb-back {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-back a i {
+  margin: 0px;
+  color: #0c1c34;
+  -webkit-animation: arrow-movement 1.5s ease-in-out infinite;
+          animation: arrow-movement 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    margin-right: 0px;
+  }
+  70% {
+    opacity: 1;
+    margin-right: 1px;
+  }
+  100% {
+    opacity: 0;
+    margin-right: 80px;
+  }
+}
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    margin-right: 0px;
+  }
+  70% {
+    opacity: 1;
+    margin-right: 1px;
+  }
+  100% {
+    opacity: 0;
+    margin-right: 80px;
+  }
 }
 
 .mb-header-bg-img {

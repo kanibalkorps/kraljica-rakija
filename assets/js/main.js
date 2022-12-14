@@ -45,6 +45,28 @@ window.onload = function(){
    productsContainer.innerHTML = productsPrint;
 
 
+   //dinamicki ispis informacija o nama
+   let infoContainer = document.querySelector("#mb-info-row");
+   
+   let infoIcons = Array("<i class='fa-solid fa-seedling mb-4'></i>","<i class='fa-solid fa-apple-whole mb-4'></i>","<i class='fa-solid fa-champagne-glasses mb-4'></i>");
+   let infoText = Array("Naš začetak zvanično datira 3 generacije unazad, iako tradicija pečenja rakije u našoj porodici traje duže nego sami zapisi o njoj. Sve je počelo kada je jedan mladić shvatio da ume da proizvede najbolju rakiju u kraju, i odlučio da svoje umeće proširi i po drugim krajevima sveta.","O kvalitetu njegove rakije brzo se pročulo, i nakon što se i cela njegova porodica pridružila proizvodnji tog napitka,od tog trenutka samo je nebo bilo prepreka! Razvivši porodičan biznis i ustanovivši se kao nezaustavljiva sila u svetu rakije, rođena je naša divna - Kraljica Rakija!","U današnje vreme, Kraljica Rakija je poznata kao neprikosnovena rakija koja ostavlja ljude koji je probaju bez teksta. Proizvodnja koja zvanično traje preko 50 godina, a u realnosti i mnogo više od toga, se sada samo nastavlja, proširuje, usavršava i prilagođava modernom svetu dok uporedo čuva dragocenosti tradicije!");
+
+   let infoPrint = '';
+   for (let i = 0; i < infoIcons.length; i++) {
+        let newColumn = `<div class="col-md-4 col-12 px-lg-5 py-3">
+                            <div class="mb-info-icon">
+                                ${infoIcons[i]}
+                            </div>
+                            <div class="mb-info-text">
+                                <p>
+                                    ${infoText[i]}                    
+                                </p>
+                            </div>
+                        </div>`;
+        infoPrint += newColumn;    
+   }
+
+   infoContainer.innerHTML = infoPrint;
 
 
 
