@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /code-for-later.txt/
+Disallow: /Dokumentacija.pdf/

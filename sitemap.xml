@@ -5,16 +5,19 @@
 <url>
   <loc>https://kanibalkorps.github.io/kraljica-rakija/</loc>
   <lastmod>2022-12-14T14:05:23+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://kanibalkorps.github.io/kraljica-rakija/index.html</loc>
   <lastmod>2022-12-14T14:05:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.95</priority>
 </url>
 <url>
   <loc>https://kanibalkorps.github.io/kraljica-rakija/o-autoru.html</loc>
   <lastmod>2022-12-14T14:05:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.90</priority>
 </url>
 

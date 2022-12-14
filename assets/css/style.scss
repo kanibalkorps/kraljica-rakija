@@ -1,5 +1,5 @@
 // REMOVE CSS IMPORTS FOR PRODUCTION BY COMBINING THEM IN 1 .MIN.CSS FILE
-@import url("responsive.css");
+//@import url("responsive.css");
 
 $main-blue: #0c1c34;
 $main-gold: #f8c90c;
@@ -267,3 +267,4 @@ $main-gray: #54595F;
     color: $main-gray;
     background-color: #fff;
 }
+

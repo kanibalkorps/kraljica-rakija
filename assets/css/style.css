@@ -1,4 +1,3 @@
-/*@import url("responsive.css");*/
 * {
   margin: 0px;
   padding: 0px;
@@ -267,9 +266,7 @@
 .accordion-button:not(.collapsed) {
   color: #54595F;
   background-color: #fff;
-}/*# sourceMappingURL=style.css.map */
-
-/*responsive*/
+}
 @media screen and (max-width: 1025px) {
   .navbar .container-fluid {
     padding: 0 50px !important;

@@ -14,7 +14,6 @@ window.onload = function(){
     //f-ja kreira navbar
     createNavBar();
 
-
    //dinamicki ispis proizvoda
    let productsContainer = document.querySelector("#mb-products-container");
 
