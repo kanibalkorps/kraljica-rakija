@@ -1,16 +1,17 @@
+//deklaracija promenljivih koje ce se koristiti kasnije u kodu
 var objName, objLastName, objAddress, objCity, objPhone, objEmail, objOrderDdl, arrOrderRadio, arrOrderCheck;
 var submitBtn = document.getElementById("btn-order");
-
+//regularni izrazi za proveru forme
 var reFullName = /^([A-ZŠČĆĐŽ][a-zščćđž]{2,14}){1,3}$/;
 var reAddress = /^(([A-ZŠĐČĆŽ][a-zšđžčć]{1,15}(\.)?)|([1-9][0-9]{0,2}(\.)?))[a-zA-Z0-9\s\/\-]+$/;
 var reEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 var reCity = /^[A-ZŠČĆĐŽ][a-zščćđž]{2,14}\s[1-9][0-9]{4}$/;
 var rePhone = /^(\+381)?(\s|-)?06(([0-6]|[8-9])\d{6,8}|(77|78)\d{7}){1}$/;
-
+//kod koji se desava nakon ucitavanja cele stranice
 window.onload = function(){
 
     const BASE_IMG = "assets/img/";
-
+    //f-ja kreira navbar
     createNavBar();
 
 
@@ -71,8 +72,6 @@ window.onload = function(){
 
 
 
-
-
     //form objekti i validacija
     objName = document.querySelector("#user-name");
     objLastName = document.querySelector("#user-lastname");
@@ -80,9 +79,9 @@ window.onload = function(){
     objCity = document.querySelector("#user-city");
     objPhone = document.querySelector("#user-phone");
     objEmail = document.querySelector("#user-email");
-    arrOrderRadio = document.getElementsByName("orderer");//mozda treba noivObj = Array.from(arrOrderRadio)
+    arrOrderRadio = document.getElementsByName("orderer");
     arrOrderCheck = document.getElementsByName("terms");
-
+   //provera unosa nakon izlaska iz text. polja
     objName.addEventListener("blur",function(){
         regexValidation(reFullName, objName);
     });
@@ -102,8 +101,9 @@ window.onload = function(){
         regexValidation(reEmail, objEmail);
     });
 
-    //select, radio i check validacija
+    //kreiranje select taga
     createDdl();
+    //select validacija
     let ddl = document.getElementById("order-method"); 
     ddl.addEventListener("click",checkDdl);    
 
@@ -146,6 +146,7 @@ function formValidationOnSubmit(){
 function regexValidation(re, obj){    
     try {
         if (!re.test(obj.value)) {
+            //ispisivanje upozorenja o pogresnom unosu korisniku
             obj.nextElementSibling.classList.remove("d-none");
             obj.nextElementSibling.classList.add("d-block");
 
@@ -153,25 +154,19 @@ function regexValidation(re, obj){
             //proverava koji je element u pitanju
             if (obj == objName || obj == objLastName) {
                 throw("Mora sadržati bar jedno veliko slovo i maksimum 15 malih.")
-                // obj.nextElementSibling.innerHTML = "Mora sadržati bar jedno veliko slovo i maksimum 15 malih.";
             }
             else if (obj == objAddress) {
                 throw("Adresa nije u dobrom formatu. Primer: Kralja Petra I 44, Sarajevska 14b...")
-                // obj.nextElementSibling.innerHTML = "Adresa nije u dobrom formatu. Primer: Kralja Petra I 44, Sarajevska 14b...";
             }
             else if (obj == objCity) {
                 throw("Grad nije u dobrom formatu. Primer: Zaječar 19000...");
-                //obj.nextElementSibling.innerHTML = "Grad nije u dobrom formatu. Primer: Zaječar 19000...";
             }
             else if (obj == objPhone) {
                 throw("Telefon mora da započne sa 06 ili +381 i da nema preko 8 cifara.");
-                //obj.nextElementSibling.innerHTML = "Telefon mora da započne sa 06 ili +381 i da nema preko 8 cifara.";
             }
             else if (obj == objEmail) {
                 throw("Email nije u dobrom formatu. Primer: username@gmail.com...");
-                //obj.nextElementSibling.innerHTML = "Email nije u dobrom formatu. Primer: username@gmail.com...";
             }
-            
         }
         else {
             obj.previousElementSibling.classList.remove("d-inline");
@@ -179,21 +174,13 @@ function regexValidation(re, obj){
             obj.nextElementSibling.classList.remove("d-block");
             obj.nextElementSibling.classList.add("d-none");
             obj.nextElementSibling.innerHTML = "";
-            if (submitBtn.hasAttribute("disabled")){
-                submitBtn.removeAttribute("disabled");
-            }
-    
         }
     }
     catch (err) {
+        //ispisuje gresku
         obj.previousElementSibling.classList.remove("d-none");
         obj.previousElementSibling.classList.add("d-inline");
         obj.nextElementSibling.innerHTML = err;
-        // //deaktivira dugme za submit ako unos nije dobar
-        // if (!submitBtn.hasAttribute("disabled")) {
-        //     submitBtn.setAttribute("disabled","disabled");
-        //     console.log("disejvl");
-        // }
     }
 }
 function createNavBar() {
@@ -204,16 +191,12 @@ function createNavBar() {
 
     for (let i = 0; i < aTagsHrefs.length; i++) {
         navContent += `<li class='nav-item'><a href="${aTagsHrefs[i]}" class="nav-link">${aTagsText[i]}</a></li>`;
-        // let newLi = document.createElement("li");
-        // newLi.classList.add("nav-item");
-        // newLi.innerHTML = aTags[i];
-        
-        // navUl.append(newLi);
     }
     navContent += "</ul>";
     document.getElementById("mb-nav-container").innerHTML += navContent;
 }
 function showNavLinks() {
+    //jquery za animaciju
     $(".navbar-nav").slideToggle();
 }
 function createDdl() {

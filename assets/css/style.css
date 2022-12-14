@@ -1,4 +1,4 @@
-@import url("responsive.css");
+/*@import url("responsive.css");*/
 * {
   margin: 0px;
   padding: 0px;
@@ -91,7 +91,7 @@
 }
 
 .mb-header-bg-img {
-  background-image: url("../img/drvece-pozadina-tamna2.png");
+  background-image: url("../img/drvece-pozadina-tamna2-compressed-resized.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -158,7 +158,7 @@
 
 .mb-info-bg {
   height: auto;
-  background-image: url("../img/header-bg-img-dark2.png");
+  background-image: url("../img/header-bg-img-dark2-min.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -268,3 +268,71 @@
   color: #54595F;
   background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
+
+/*responsive*/
+@media screen and (max-width: 1025px) {
+  .navbar .container-fluid {
+    padding: 0 50px !important;
+  }
+  .mb-info-bg .mb-info {
+    width: 95% !important;
+  }
+  .footer-links ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .navbar .container-fluid .mb-logo-and-hamburger {
+    display: block;
+    width: 100%;
+  }
+  .navbar .container-fluid .mb-logo-and-hamburger .mb-hamburger-btn {
+    display: inline !important;
+    padding: 0 10px;
+    border: none;
+    background-color: #0c1c34 !important;
+    float: right;
+  }
+  .navbar .container-fluid .mb-logo-and-hamburger .mb-hamburger-btn i {
+    color: #fff !important;
+    font-size: 32px;
+  }
+  .navbar .container-fluid #mb-nav-container {
+    width: 100%;
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center;
+  }
+  .navbar .container-fluid #mb-nav-container .navbar-nav {
+    display: none;
+  }
+  .mb-info-bg .mb-info {
+    width: 95% !important;
+  }
+  .mb-questions-width {
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 426px) {
+  .navbar .container-fluid {
+    padding: 0 30px !important;
+  }
+  .mb-header-bg-img {
+    height: 500px;
+    padding: 0px;
+  }
+  .mb-header-content {
+    width: 100% !important;
+  }
+  .mb-info-bg .mb-info-icon i {
+    font-size: 45px !important;
+  }
+  .footer-links ul li a {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 376px) {
+  .mb-about-header {
+    width: 100%;
+  }
+}
